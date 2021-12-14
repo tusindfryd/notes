@@ -6,7 +6,7 @@
 
   .nodes circle {
     cursor: pointer;
-    fill: #8b88e6;
+    fill: #009e73;
     transition: all 0.15s ease-out;
   }
 
@@ -28,12 +28,13 @@
   }
 
   #graph-wrapper {
+    cursor: grab;
     max-width: 100%;
     overflow: hidden;
     touch-action: pan-y;
-    background: #fcfcfc;
     border-radius: 4px;
     height: auto;
+    max-height: 50vh;
   }
 </style>
 
@@ -165,7 +166,7 @@
     const graphWrapper = document.getElementById('graph-wrapper')
     const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-    element.setAttribute("height", window.innerHeight * 0.8);
+    element.setAttribute("height", window.innerHeight * 0.5);
     graphWrapper.appendChild(element);
 
     const reportWindowSize = () => {
