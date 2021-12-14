@@ -1,5 +1,8 @@
 ---
+title: Updating Ender-3 Firmware
 ---
+
+<!--[[3D Printing]]-->
 
 For some time now, the Creality Ender 3 printer is being shipped with the V4.2.2 32-bit board, with a bootloader; meaning that upgrading the firmware involves just booting up the machine with a new `firmware.bin` file.
 
