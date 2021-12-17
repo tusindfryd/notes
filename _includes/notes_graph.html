@@ -6,20 +6,18 @@
 
   .nodes circle {
     cursor: pointer;
-    fill: #009e73;
+    fill: #BACDD1;
     transition: all 0.15s ease-out;
   }
 
-  .text text {
+  .text text, .text [active] {
     cursor: pointer;
-    fill: #333;
-    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+    fill: #222;
   }
 
-  .nodes [active],
-  .text [active] {
+  .nodes [active] {
     cursor: pointer;
-    fill: black;
+    fill: #A7B17F;
   }
 
   .inactive {
@@ -48,9 +46,9 @@
     const MAX_NODE_SIZE = 12;
     const ACTIVE_RADIUS_FACTOR = 1.5;
     const STROKE = 1;
-    const FONT_SIZE = 16;
+    const FONT_SIZE = 12;
     const TICKS = 200;
-    const FONT_BASELINE = 40;
+    const FONT_BASELINE = 30;
     const MAX_LABEL_LENGTH = 50;
 
     const graphData = {% include notes_graph.json %}

@@ -22,6 +22,7 @@ title: Colorblind Friendly Palette
     box-shadow: none;
     padding: 0px;
     height: 50px;
+    width: 50px;
     border-radius: 10cm;
     margin-top: 10px;
 }
