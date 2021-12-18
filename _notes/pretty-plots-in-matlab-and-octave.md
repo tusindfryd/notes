@@ -5,7 +5,6 @@ title: Pretty Plots in Matlab and Octave
 <!--[[University]]-->
 <!--[[Programming]]-->
 
-Matlab:
 ```matlab
 figures = findobj(0, 'type', 'figure');
 for i = 1 : length(figures)
