@@ -1,0 +1,4 @@
+---
+title: Electronics
+layout: category
+---
