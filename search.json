@@ -1,0 +1,13 @@
+---
+layout: none
+---
+[
+  {% for note in site.notes %}
+    {
+      "title"    : "{{ note.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ note.url }}",
+      "date"     : "{{ note.date }}",
+      "content"  : "{{ note.content | strip_html | strip | strip_newlines | remove: "\" | remove: '"' }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

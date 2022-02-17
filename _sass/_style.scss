@@ -226,3 +226,21 @@ ul {
 .twitter-tweet.twitter-tweet-rendered {
   margin: auto;
 }
+
+input#search-input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  border-bottom: 1px solid #BACDD1;
+}
+
+input#search-input::placeholder {
+  text-align: right;
+  margin-right: -10px;
+}
+
+input#search-input:focus {
+  background: transparent!important;
+}
