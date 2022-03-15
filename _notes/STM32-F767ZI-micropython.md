@@ -2,6 +2,7 @@
 title: MicroPython on STM32 Nucleo F767ZI
 ---
 <!--[[Electronics]]--->
+<!--[[Code]]--->
 <!--[[STM32 F767ZI Pinout]]--->
 
 (several ways to do this, but here's one with the STM32CubeProgrammer and Windows)
