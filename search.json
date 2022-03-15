@@ -1,0 +1,150 @@
+[
+  
+    {
+      "title"    : "2022 logs",
+      "url"      : "/notes/2022-logs",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "films2022-01-01: Kajillionaire (so good!)2022-01-12: The Lego Batman Movie (pew pew pew pew pew. really fun)2022-03-04: The Batman (liked the LEGO one better)shows2022-02: Succession (billionaires cursing at each other. enjoyable)2022-03: Euphoria (so bad! entertaining though)"
+    } ,
+  
+    {
+      "title"    : "3D Printing",
+      "url"      : "/notes/3d-printing",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "LM8562",
+      "url"      : "/notes/lm8562-radio-chip",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "Pretty interesting chip.Also this StackExchange post may be useful when I get to testing the BB 94HB screen."
+    } ,
+  
+    {
+      "title"    : "MicroPython on STM32 Nucleo F767ZI",
+      "url"      : "/notes/stm32-f767zi-micropython",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "(several ways to do this, but here’s one with the STM32CubeProgrammer and Windows)  Download the .hex file.  Connect the board through the ST-Link USB.  Open STM32CubeProgrammer, choose ST-Link and Connect.  In Erasing &amp; Programming choose the .hex file path, don’t skip flash erase, and Start Programming.  If everything is okay, connect the second USB port. Two devices should be listed (NOD_F767ZI and PYBFLASH)."
+    } ,
+  
+    {
+      "title"    : "STM32 F767ZI Pinout",
+      "url"      : "/notes/stm32-f767zi-pinout",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Programming ATtiny with USBASP and Arduino IDE",
+      "url"      : "/notes/attiny-aspusb",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "USBASP driversOn Linux and MacOS this step should not be necessery. On Windows, install Zadig and install the libusbK (v3.1.0.0) driver (libusb-win32 (v1.2.6.0) did not work for me).Connections  Enable the slow mode with a jumper (JP3).  Connect the USBASP to the ATtiny (bear in mind the orientation of the USBASP pinout, check if it’s not mirrored when using a ribbon cable).     USBASP                 +--------------+             ATTINY    |1 MOSI  VCC 10|         +------u------+|              |         |1 RST   VCC 8|         10 (VCC) -&gt; 8 (VCC)|2 GND    TXD 9|         |             |         1 (MOSI) -&gt; 5 (MOSI)|              |         |2       SCK 7|         3 (RST)  -&gt; 1 (RST) 3 RST    RXD 8|         |             |         4 (SCK)  -&gt; 7 (SCK)|              |         |3      MISO 6|         6 (GND)  -&gt; 4 (GND)|4 SCK    GND 7|         |             |         5 (MISO) -&gt; 6 (MISO)   |              |         |4 GND  MOSI 5||5 MISO   GND 6|         +-------------++--------------+         Arduino IDE setup  Go to File -&gt; Preferences. In Additional Boards Manager URLs paste https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json.  Go to Tools -&gt; Boards -&gt; Board Manager. Search for attiny and install the boards.  In Tools, set board, processor, and clock to the values corresponding to the chip.  In Tools, set programmer to USBasp.Troubleshooting  1 second delay results in an 8 second delay:          The device runs at 1 MHz instead of 8 MHz - go to Tools -&gt; Burn Bootloader to make it run at 8 MHz."
+    } ,
+  
+    {
+      "title"    : "Carpal tunnel",
+      "url"      : "/notes/carpal-tunnel",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "probably worth bookmarking these since it will only be getting worse  Notes on RSI for Developers"
+    } ,
+  
+    {
+      "title"    : "Colorblind Friendly Palette",
+      "url"      : "/notes/colorblind-friendly-palette",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "From: Points of view: Color blindness"
+    } ,
+  
+    {
+      "title"    : "Customizing Gimp",
+      "url"      : "/notes/customizing-gimp",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "Hide the Gimp logo from the main window background  Replace the Gimp splash image at C:Program FilesGIMP 2sharegimp2.0imagesgimp-splash.png"
+    } ,
+  
+    {
+      "title"    : "Electronics",
+      "url"      : "/notes/electronics",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Heart Shaped Supercapacitor",
+      "url"      : "/notes/heart-shaped-supercapacitor",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "IMO it should be more explicitly heart-shaped but we can work with that it is still cute: Vishay MAL219691253E3"
+    } ,
+  
+    {
+      "title"    : "Site manual",
+      "url"      : "/notes/manual",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "This site is based on the Digital Garden template by Maxime Vaillancourt.Link syntax  external links: [link title](url)  internal links:            [[  note title  ]]        [[  note filename  ]]        [[  note title | link title  ]]        [[  note filename | link title  ]]      normal HTML syntax      FootnotesFootnotes are treated like internal links.1Code syntax highlightingYou can add code blocks with full syntax color highlighting by wrapping code snippet in triple backticks and specifying the type of the code (js, rb, sh, etc.):// a bit of JavaScript:console.log(hello!);$ cat /dev/urandom | grep the answer to life # shell scripts look nice too            here, a footnote ↩"
+    } ,
+  
+    {
+      "title"    : "Pretty Plots in Matlab and Octave",
+      "url"      : "/notes/pretty-plots-in-matlab-and-octave",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "figures = findobj(0, 'type', 'figure');for i = 1 : length(figures)    print(figs(i), '-depsc', sprintf('figure%d.eps', i));endThen in LaTeX include the figures normally with includegraphics[width=0.33textwidth]{figure.eps}."
+    } ,
+  
+    {
+      "title"    : "Code",
+      "url"      : "/notes/programming",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Python HTTP Server",
+      "url"      : "/notes/python-http-server",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "From: How do you set up a local testing server?python -m http.server"
+    } ,
+  
+    {
+      "title"    : "Robotics",
+      "url"      : "/notes/robotics",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "RobotStudio (YouTube tutorials)",
+      "url"      : "/notes/robotstudio-youtube-tutorials",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Timers and STM32 Cube IDE",
+      "url"      : "/notes/timers-and-stm32-cube-ide",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "Timers[f_{timer} = frac{f_{clock}}{(ARR + 1)cdot(PSC + 1)}]where (ARR) is the counter period and (PSC) is the prescaler.Example:[f_{timer} =frac{96MHz}{(999+1)cdot(95+1)}=frac{96 000 000 Hz}{1000 cdot 96} = 1000 Hz][T = frac{1}{1000Hz} = 0.001s = 1ms]Then: HAL_TIM_Base_Start(&amp;htim1); or HAL_TIM_Base_Start_IT(&amp;htim1);Accessing the counter period (autoreload): __HAL_TIM_GET_AUTORELOAD(&amp;htim1);Changing the counter period: __HAL_TIM_SET_AUTORELOAD(&amp;htim1, new_value);In the case of interrupts, the callback function is:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {  if (htim-&gt;Instance == TIM1) {     // do something  }}Pulse-Width Modulation (PWM):[duty;cycle = 100% cdot frac{pulse}{ARR + 1}]Example:[duty;cycle = 100% cdot frac{500}{999 + 1}=50%]Then: HAL_TIM_PWM_Start(&amp;htim1, TIM_CHANNEL_1);Accessing the pulse value (CRR): __HAL_TIM_GET_COMPARE(&amp;htim1, TIM_CHANNEL_1);Changing the pulse value: __HAL_TIM_SET_COMPARE(&amp;htim1, TIM_CHANNEL_3, new_value);Rotary encodersDisable all channels, set combined channels to encoder mode, then set the timer in the blocking mode like HAL_TIM_Base_Start(&amp;htim1); and in the main loop get the pulse count by pulse_count = TIM1-&gt;CNT; and the number of positions by positions = pulse_count / 4; (since there are four pulses per position)."
+    } ,
+  
+    {
+      "title"    : "UM66T",
+      "url"      : "/notes/um66t",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "Holiday decap of a tiny chip that plays Christmas songs. The UM66T melody chip looks like a transistor but contains a 64-note ROM and drives a speaker directly. It was designed for greeting cards and toys. Let's see what's inside this chip.🧵 pic.twitter.com/eTvbG1kt1n— Ken Shirriff (@kenshirriff) December 18, 2021"
+    } ,
+  
+    {
+      "title"    : "University",
+      "url"      : "/notes/university",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : ""
+    } ,
+  
+    {
+      "title"    : "Updating Ender-3 Firmware",
+      "url"      : "/notes/updating-ender-3-firmware",
+      "date"     : "2022-03-15 19:41:41 +0000",
+      "content"  : "For some time now, the Creality Ender 3 printer is being shipped with the V4.2.2 32-bit board, with a bootloader; meaning that upgrading the firmware involves just booting up the machine with a new firmware.bin file.Step 0: Make sure the board inside is V4.2.2Unscrew the left panel. The board inside should have its version written on top of it.Step 1: Install prerequisitesInstall VS Code if you don’t have it installed already and the PlatformIO IDE VS Code extension. Download the zip file with latest release of the Marlin firmware and the corresponding config files.Step 2: Download the firmwareIn the downloaded folder with the config files, find the configexamplesCrealityEnder-3CrealityV422 subfolder. This naming may change depending on the version - look for the name of your printer and the name of the board. Copy all the files into the Marlin subfolder inside the other downloaded folder with the Marlin firmware - overwrite the previous config files there.Step 3: Prepare the firmware.bin fileLaunch VSCode in the folder with the Marlin firmware and open the platformio.ini file. Set the value of default_envs to STM32F103RET6_creality (for example default_envs = atmega2560 to default_envs = STM32F103RET6_creality).Step 4: Add auto-levelingOpen the Configuration.h file and uncomment (remove the preceding ) the following definitions:  #define MESH_BED_LEVELING  #define LCD_BED_LEVELING  #define RESTORE_LEVELING_AFTER_G28Step 5: Build the firmware.bin fileClick the check mark in the bottom left corner (PlatformIO: Build) or find the PlatformIO: Build command in the command palette (ctrl + shift + P).Step 6: Flash the firmwareIf the build succeeded, go to the folder with the Marlin firmware and find the .piobuildSTM32F103RET6_creality subfolder. Copy the firmware-[timestamp].bin file into the empty SD card. Turn off your printer, insert the SD card, and turn it on. After a few seconds, the splash screen should appear and the firmware should be successfully updated.TroubleshootingIf you’re getting an error about the eeprom version error, choose Ignore, and in the printer settings choose “Store settings”."
+    } 
+  
+]
